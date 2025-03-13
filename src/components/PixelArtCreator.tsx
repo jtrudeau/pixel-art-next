@@ -37,7 +37,7 @@ export default function PixelArtCreator() {
   };
 
   const [grid, setGrid] = useState<string[][]>(
-    Array(gridSize).fill(null).map(() => Array(gridSize).fill("a"))
+    Array(gridSize).fill(null).map(() => Array(gridSize).fill("c"))
   );
   const [selectedColor, setSelectedColor] = useState<string>("c");
   const gridRef = useRef<HTMLDivElement>(null);
@@ -50,7 +50,7 @@ export default function PixelArtCreator() {
   };
 
   const handleReset = () => {
-    setGrid(Array(gridSize).fill(null).map(() => Array(gridSize).fill("a")));
+    setGrid(Array(gridSize).fill(null).map(() => Array(gridSize).fill("c")));
   };
 
   const handleExport = () => {
