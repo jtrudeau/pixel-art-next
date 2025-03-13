@@ -108,7 +108,7 @@ export default function PixelArtCreator() {
       <div className="mt-4 p-2 bg-gray-100 border border-gray-300 rounded">
         <p className="text-sm font-mono mt-2"># Colour definitions:</p>
         <pre className="text-sm font-mono">
-          {Array.from(new Set(grid.flat())).map(key => `${key} = ${colors[key]}`).join("\n")}
+          {Array.from(new Set(grid.flat())).map(key => `${key} = ${colors[key].replace('rgb', '')}`).join("\n")}
         </pre>
         <p className="text-sm font-mono mt-6"># Image definitions:</p>
         <p className="text-sm font-mono">image= </p>
